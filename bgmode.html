@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgMode</title>
+    <style>
+        .btn{
+            width: 900px;
+            border: 2px solid;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(4, 4, 37);
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+
+        }
+
+    </style>
+</head>
+<body id="body">
+    <div class="btn">
+      <button onclick="bgMode ('black')">DARK MODE</button>  
+      <button onclick="bgMode ('white')">LIGHT MODE</button>  
+      <button onclick="bgMode ('green')">GREEN MODE</button>  
+      <button onclick="bgMode ('yellow')">YELLOW MODE</button>  
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam veniam cum debitis, rem iste voluptatem fugit. Quis adipisci corporis reiciendis quibusdam ab doloribus cumque?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam veniam cum debitis, rem iste voluptatem fugit. Quis adipisci corporis reiciendis quibusdam ab doloribus cumque?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam veniam cum debitis, rem iste voluptatem fugit. Quis adipisci corporis reiciendis quibusdam ab doloribus cumque?
+    </p>
+
+<script>
+    function bgMode (color) {
+        document.querySelector('#body').style.backgroundColor = color
+
+        if (color == 'black'){
+           document.querySelector('#body').style.color = 'white'
+        }else {
+            document.querySelector('#body').style.color = 'black'
+        }
+        
+    }
+</script>
+</body>
+</html>
